@@ -39,7 +39,8 @@ console.log(consume("Mary","Poppins", greeting));
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: Because it is inside `myFunctions()` closure. Running `myFunction();` starts from the top, logs the var `external`
+// continues down and sees theres a new function called `nestedFunction()` which is then closed and called right after.
 
 
 const external = "I'm outside the function";
